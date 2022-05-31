@@ -1,0 +1,29 @@
+<div id = "characters_list">
+  <p>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      キャラクター一覧はこちら
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">キャラクター</th>
+        <th scope="col">元素</th>
+        <th scope="col">武器</th>
+        <th scope="col">CV</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% Character.all.each do | character | %>
+        <tr>
+          <td><%= character.name %></td>
+          <td><%= character.element %></td>
+          <td><%= character.weapon %></td>
+          <td><%= character.character_voice %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
