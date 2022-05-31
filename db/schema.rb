@@ -17,6 +17,13 @@ ActiveRecord::Schema.define(version: 2022_05_30_074705) do
     t.string "element"
     t.string "weapon"
     t.string "character_voice"
+    t.string "has_heavy_past"
+    t.string "gap_app_age"
+    t.string "attack_or_support"
+    t.string "would_betray"
+    t.string "hot_female"
+    t.string "ikemen"
+    t.string "helpful"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

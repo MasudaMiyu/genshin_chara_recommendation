@@ -1,0 +1,21 @@
+<div id="main">
+  <%= form_with url: "#", method: :patch, local:true do |f| %>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card bg-light">
+          <div class="card-header">旅人におすすめのキャラクターは</div>
+          <div class="card-body">
+            <p class="card-text"><%= @character.name %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group row mt-5">
+      <div class="col-12">
+        <%= link_to("もう一度ゲームする", root_path, class: "btn btn-lg btn btn-outline-info btn-block")  %>
+      </div>
+    </div>
+<% end %>
+</div>

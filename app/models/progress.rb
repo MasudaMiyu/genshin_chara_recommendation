@@ -2,6 +2,14 @@ class Progress < ApplicationRecord
   belongs_to :game
   belongs_to :question
 
+  def positive_answer?
+    answer == 'positive'
+  end
+  
+  def negative_answer?
+    answer == 'negative'
+  end
+
   def assign_sequence
     next_sequence = 1
     #　もしgame(gameコントローラーのcreateアクション)が存在していたとき

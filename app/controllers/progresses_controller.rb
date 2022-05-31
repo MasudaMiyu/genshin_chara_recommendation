@@ -8,26 +8,42 @@ class ProgressesController < ApplicationController
   end
     
   def create
-  # url(game/game_id/progresses_new)のgame_idからGameレコードを検索しcurrent_gameとして保存
+    # url(game/game_id/progresses_new)のgame_idからGameレコードを検索しcurrent_gameとして保存
     current_game = Game.find(params[:game_id])
-  # progressにcurrent_gameと紐づいたprogressを作成
+    # progressにcurrent_gameと紐づいたprogressを作成
     progress = current_game.progresses.new(create_params)
-  # progressモデルのassign_sequenceメソッドを呼び出す
+    # progressモデルのassign_sequenceメソッドを呼び出す
     progress.assign_sequence
-  # 回答した内容を保存する
+    # 回答した内容を保存する
     progress.save!
-    next_question = Question.next_question(current_game)
-    if next_question.blank?
-      # Gameレコードのカラムに代入
-      current_game.status = 'finished'
-      current_game.result = 'incorrect'
-      current_game.save!
-    # give_upパスに移動
+    # ExtractionAlgorithmクラスのcomputeメソッドを呼び出して絞り込みを行う
+    @extract_characters = ExtractionAlgorithm.new(current_game).compute
+
+    if @extract_characters.count == 0
       redirect_to give_up_game_path(current_game)
       return
     end
-    # 現在のゲームのurlに移動
-    redirect_to new_game_progress_path(current_game)
+
+    if @extract_characters.count == 1
+      redirect_to result_game_path(current_game)
+      return
+    end
+
+    if @extract_characters.count >= 2
+      next_question = Question.next_question(current_game)
+      if next_question.blank?
+        # Gameレコードのカラムに代入
+        current_game.status = 'finished'
+        current_game.result = :incorrect
+        current_game.save!
+      # give_upパスに移動
+        redirect_to give_up_game_path(current_game)
+        return
+      end
+      # 現在のゲームのurlに移動
+      redirect_to new_game_progress_path(current_game)
+      return
+    end
   end
   
   private

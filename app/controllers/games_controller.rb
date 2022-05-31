@@ -6,7 +6,11 @@ class GamesController < ApplicationController
     redirect_to new_game_progress_path(game)
   end
 
-  def give_up
-    
+  def give_up; end
+
+  def result
+    current_game = Game.find(params[:id])
+    extract_character =  ExtractionAlgorithm.new(current_game).compute
+    @character = extract_character.first
   end
 end
