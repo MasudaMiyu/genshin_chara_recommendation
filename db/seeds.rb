@@ -46,20 +46,20 @@ case ENV['SECTION']
 
   when "4-2"
     characters = [
-      #{ name: 'ディルック', element: '炎', weapon: '大剣', character_voice: '小野賢章', has_heavy_past: '父親が亡くなり家族に裏切られた', gap_app_age: nil, attack_or_support: 'attack', would_betray: nil, hot_female: nil, ikemen: 'yes', helpful: nil },
-      #{ name: 'アルベド', element: '岩', weapon: '片手剣', character_voice: '野島健児', has_heavy_past: 'yes', gap_app_age: 'yes', attack_or_support: nil, would_betray: nil, hot_female: nil, ikemen: 'yes', helpful: 'yes' },
-      #{ name: '魈', element: '風', weapon: '槍', character_voice: '松岡禎丞', has_heavy_past: 'yes', gap_app_age: 'yes', attack_or_support: 'attack', would_betray: nil,hot_female: nil, ikemen: 'yes', helpful: nil },
-      #{ name: '鍾離', element: '岩', weapon: '槍', character_voice: '前野智昭', has_heavy_past: 'yes', gap_app_age: 'yes', attack_or_support: nil, would_betray: nil,hot_female: nil, ikemen: 'yes', helpful: nil },
-      #{ name: 'タルタリヤ', element: '水', weapon: '弓', character_voice: '木村良平', has_heavy_past: nil, gap_app_age: nil, attack_or_support: 'attack', would_betray: 'yes',hot_female: nil, ikemen: 'yes' },
-      #{ name: '神里綾人', element: '水', weapon: '片手剣', character_voice: '石田彰', has_heavy_past: 'yes', gap_app_age: nil, attack_or_support: 'attack', would_betray: 'yes',hot_female: nil, ikemen: 'yes' },
+      { name: 'ディルック', element: '炎', weapon: '大剣', character_voice: '小野賢章', has_heavy_past: '父親が亡くなり家族に裏切られた', gap_app_age: nil, attack_or_support: 'attack', would_betray: nil, hot_female: nil, ikemen: 'yes', helpful: nil },
+      { name: 'アルベド', element: '岩', weapon: '片手剣', character_voice: '野島健児', has_heavy_past: 'yes', gap_app_age: 'yes', attack_or_support: nil, would_betray: nil, hot_female: nil, ikemen: 'yes', helpful: 'yes' },
+      { name: '魈', element: '風', weapon: '槍', character_voice: '松岡禎丞', has_heavy_past: 'yes', gap_app_age: 'yes', attack_or_support: 'attack', would_betray: nil,hot_female: nil, ikemen: 'yes', helpful: nil },
+      { name: '鍾離', element: '岩', weapon: '槍', character_voice: '前野智昭', has_heavy_past: 'yes', gap_app_age: 'yes', attack_or_support: nil, would_betray: nil,hot_female: nil, ikemen: 'yes', helpful: nil },
+      { name: 'タルタリヤ', element: '水', weapon: '弓', character_voice: '木村良平', has_heavy_past: nil, gap_app_age: nil, attack_or_support: 'attack', would_betray: 'yes',hot_female: nil, ikemen: 'yes' },
+      { name: '神里綾人', element: '水', weapon: '片手剣', character_voice: '石田彰', has_heavy_past: 'yes', gap_app_age: nil, attack_or_support: 'attack', would_betray: 'yes',hot_female: nil, ikemen: 'yes' },
       { name: '荒滝一斗', element: '岩', weapon: '大剣', character_voice: '西川貴教', has_heavy_past: nil, gap_app_age: nil, attack_or_support: 'attack', would_betray: nil,hot_female: nil, ikemen: nil, helpful: 'yes' },
       { name: 'モナ', element: '水', weapon: '法器', character_voice: '小原好美', has_heavy_past: nil, gap_app_age: nil, attack_or_support: nil, would_betray: nil,hot_female: nil, ikemen: nil, helpful: nil },
-      #{ name: 'ジン', element: '風', weapon: '片手剣', character_voice: '斎藤千和', has_heavy_past: nil, gap_app_age: nil, attack_or_support: nil, would_betray: nil,hot_female: 'yes', ikemen: nil, helpful: 'yes' },
-      #{ name: 'エウルア', element: '', weapon: '大剣', character_voice: '佐藤利奈', has_heavy_past: 'yes', gap_app_age: nil, attack_or_support: 'attack', would_betray: nil,hot_female: 'yes', ikemen: 'yes', helpful: nil },
-      #{ name: '申鶴', element: '氷', weapon: '槍', character_voice: '川澄綾子', has_heavy_past: 'yes', gap_app_age: nil, attack_or_support: nil, would_betray: nil,hot_female: 'yes', ikemen: nil, helpful: nil },
-      #{ name: '雷電将軍', element: '雷', weapon: '槍', character_voice: '沢城みゆき', has_heavy_past: 'yes', gap_app_age: nil, attack_or_support: 'yes', would_betray: nil,hot_female: 'yes', ikemen: nil, helpful: nil },
-      #{ name: '八重神子', element: '雷', weapon: '法器', character_voice: '佐倉綾音', has_heavy_past: nil, gap_app_age: nil, attack_or_support: nil, would_betray: nil,hot_female: 'yes', ikemen: nil, helpful: nil },
-      #{ name: '夜蘭', element: '水', weapon: '弓', character_voice: '遠藤綾', has_heavy_past: nil, gap_app_age: nil, attack_or_support: nil, would_betray: nil,hot_female: 'yes', ikemen: 'yes', helpful: nil }
+      { name: 'ジン', element: '風', weapon: '片手剣', character_voice: '斎藤千和', has_heavy_past: nil, gap_app_age: nil, attack_or_support: nil, would_betray: nil,hot_female: 'yes', ikemen: nil, helpful: 'yes' },
+      { name: 'エウルア', element: '氷', weapon: '大剣', character_voice: '佐藤利奈', has_heavy_past: 'yes', gap_app_age: nil, attack_or_support: 'attack', would_betray: nil,hot_female: 'yes', ikemen: 'yes', helpful: nil },
+      { name: '申鶴', element: '氷', weapon: '槍', character_voice: '川澄綾子', has_heavy_past: 'yes', gap_app_age: nil, attack_or_support: nil, would_betray: nil,hot_female: 'yes', ikemen: nil, helpful: nil },
+      { name: '雷電将軍', element: '雷', weapon: '槍', character_voice: '沢城みゆき', has_heavy_past: 'yes', gap_app_age: nil, attack_or_support: 'yes', would_betray: nil,hot_female: 'yes', ikemen: nil, helpful: nil },
+      { name: '八重神子', element: '雷', weapon: '法器', character_voice: '佐倉綾音', has_heavy_past: nil, gap_app_age: nil, attack_or_support: nil, would_betray: nil,hot_female: 'yes', ikemen: nil, helpful: nil },
+      { name: '夜蘭', element: '水', weapon: '弓', character_voice: '遠藤綾', has_heavy_past: nil, gap_app_age: nil, attack_or_support: nil, would_betray: nil,hot_female: 'yes', ikemen: 'yes', helpful: nil }
     ]
 
     questions = [
