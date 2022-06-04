@@ -1,12 +1,10 @@
 <footer class="footer">
-	<div class="container text-center">
-    <ul>
-      <div class=nav>
-        <li class="text-muted">©︎2022 paimon-oshi-refinor</li>
-        <li class="text-muted"><%= link_to '利用規約', user_policy_path, class:"link2" %></li>
-        <li class="text-muted"><%= link_to 'プライバシーポリシー', privacy_policy_path, class:"link2" %></li>
-        <li class="text-muted"><%= link_to 'お問い合わせ', inquiry_path, class:"link2" %></li>
+	<div class="container">
+      <div class="link">
+        <%= link_to '利用規約', user_policy_path, class:"link2" %>
+        <%= link_to 'プライバシーポリシー', privacy_policy_path, class:"link2" %>
+        <%= link_to 'お問い合わせ', inquiry_path, class:"link2" %>
       </div>
-    </ul>
+      <div class="copy-right"><small>&copy;2022 paimon-oshi-refinor</small></div>
 	</div>
 </footer>

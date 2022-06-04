@@ -25,23 +25,33 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 70px;
   background-color: #b7dcdd;
 }
-.container {
+.footer .container {
   width: auto;
   max-width: 680px;
   padding: 0 15px;
 }
-.container .text-muted {
-  margin: 20px 0;
-  padding-right: 20px;
+
+.copy-right{
+  text-align: center;
+  margin: 10px 10px;
 }
 
 .link2{
   color: #636b6b;
+  margin-right: 20px;
 }
 .link2:hover{
   text-decoration: none;
   color: #7d8989;
+}
+
+.link{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px;
 }

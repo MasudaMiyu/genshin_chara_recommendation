@@ -1,24 +1,34 @@
-# README
+# サービス概要
+原神というゲームをやっている人、原神をやろうか迷っている人のために
+おすすめのキャラクターを紹介するサービス
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# メインのターゲットユーザー
+原神をやっている人、これからやろうと思っている人
 
-Things you may want to cover:
+# ユーザーが抱える課題と解決方法
+原神を友達にやってもらいたいと思った時にこの診断ツールを使ってもらい
+友達に合ったキャラクターをおすすめすることで興味を持ってもらうことを目的としています。
 
-* Ruby version
+# 実装予定の機能
+・原神おすすめキャラクターの診断
+・シェアボタン
+・youtubeの埋め込み
+・公式サイトへの誘導
+・問い合わせフォーム
 
-* System dependencies
+# なぜこのサービスを作りたいのか？
+原神をプレイしている人が周りにいなかったのでユーザーが増えて欲しいからです。
 
-* Configuration
+# バックエンド
+Ruby 2.7.2
+Rails 6.0.3
 
-* Database creation
+# フロントエンド
+SCSS (CSS)
+bootstrap 4.5.0
+webpacker
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# インフラ
+heroku
+Postgres
