@@ -15,11 +15,13 @@
     <div class="form-group row mt-5">
       <div class="col-12">
         <!--シェアボタン-->
-        <%= link_to "https://twitter.com/share?url=#{ request.url }&text=旅人におすすめのキャラクターは『#{ @character.name }』", target: '_blank' do %>
-          <i class="fab fa-twitter"></i>
-        <% end %>
+        <div class="share-bottom">
+          <%= link_to "https://twitter.com/share?url=#{ request.url }&text=旅人におすすめのキャラクターは『#{ @character.name }』", target: '_blank' do %>
+            <i class="fab fa-twitter"></i>&nbsp;結果をシェア
+          <% end %>
+        </div>
         <%= link_to("もう一度ゲームする", root_path, class: "btn btn-lg btn btn-outline-info btn-block")  %>
       </div>
     </div>
-<% end %>
+  <% end %>
 </div>
