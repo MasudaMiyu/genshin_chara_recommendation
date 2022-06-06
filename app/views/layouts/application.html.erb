@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Techpitnator</title>
+    <title>Pimon-oshi-refinor</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- ogp -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="<%= full_title(yield(:title)) %>" />
+    <meta property="og:url" content="<%= request.url %>" />
+    <meta property="og:description"
+      content="<%= content_for?(:description) ? yield(:description) : 'あなたにぴったりの原神キャラクターを診断します' %>" />
+    <meta property="og:image"
+      content="assets/images/paimon.png" />
   </head>
 
   <body>
