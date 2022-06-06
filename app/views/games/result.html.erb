@@ -18,7 +18,7 @@
       <div class="col-12">
         <!--シェアボタン-->
         <div class="share-bottom">
-          <%= link_to "https://twitter.com/share?url=#{ request.url }&text=旅人におすすめのキャラクターは『#{ @character.name }』", target: '_blank' do %>
+          <%= link_to "https://twitter.com/share?url=#{ request.url }&text=旅人におすすめのキャラクターは%0a『#{ @character.name }』%0a", target: '_blank' do %>
             <i class="fab fa-twitter"></i>&nbsp;結果をシェア
           <% end %>
         </div>
